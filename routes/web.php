@@ -7,9 +7,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
 
 Route::resource('posts', PostController::class);
-=======
 // oli
->>>>>>> 6ec7f17 (oalaa)
