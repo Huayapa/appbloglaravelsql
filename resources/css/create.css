@@ -1,0 +1,100 @@
+/* === Fondo general === */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
+    color: #f2f2f2;
+}
+
+/* === Lienzo de estrellas === */
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* === Contenedor === */
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 10vh auto;
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+/* === Título === */
+.title {
+    font-size: 2.3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.subtitle {
+    color: #aaa;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* === Formulario === */
+.form-group {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+input, textarea {
+    width: 100%;
+    background: #121212;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 12px;
+    color: #f1f1f1;
+    font-size: 1em;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 10px #1e88e5;
+    outline: none;
+}
+
+textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+/* === Botón === */
+.btn-guardar {
+    display: inline-block;
+    background: linear-gradient(135deg, #1e88e5, #00bcd4);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 12px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-guardar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00bcd4;
+}
