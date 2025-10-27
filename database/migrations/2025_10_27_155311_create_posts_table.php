@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('content');
-            $table->timestamps();
+            $table->dateTimeTz('created_at', 0)->nullable();
+            $table->dateTimeTz('updated_at', 0)->nullable();
         });
     }
 
